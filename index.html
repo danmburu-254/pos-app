@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoWisa POS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Corner Shop POS</p>
+      <h1>Sales Register</h1>
+    </div>
+    <p class="status-pill">Open</p>
+  </header>
+
+  <main class="pos-layout">
+    <section class="panel products-panel">
+      <div class="panel-heading">
+        <h2>Products</h2>
+        <p>Tap an item to add it to the cart.</p>
+      </div>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <aside class="panel cart-panel">
+      <div class="panel-heading">
+        <h2>Cart</h2>
+        <p id="cart-count">0 items</p>
+      </div>
+
+      <div id="cart-items" class="cart-items">
+        <p class="empty-cart">No items yet.</p>
+      </div>
+
+      <div class="totals-card">
+        <button id="discount-button" class="discount-button">Apply 10% discount</button>
+        <div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+        <div><span>Discount</span><strong id="discount">-$0.00</strong></div>
+        <div><span>Tax</span><strong id="tax">$0.00</strong></div>
+        <div class="grand-total"><span>Total</span><strong id="total">$0.00</strong></div>
+        <label class="payment-field" for="amount-paid">
+          Amount paid
+          <input id="amount-paid" type="number" min="0" step="0.01" placeholder="0.00" />
+        </label>
+        <div><span>Change due</span><strong id="change-due">$0.00</strong></div>
+      </div>
+
+      <button id="checkout-button" class="checkout-button">Checkout</button>
+
+      <div id="receipt" class="receipt-card">
+        <p class="empty-cart">No receipt yet.</p>
+      </div>
+
+      <section class="sales-history-card">
+        <div class="history-heading">
+          <h2>Sales History</h2>
+          <p id="sales-count">0 sales</p>
+        </div>
+        <div id="sales-history" class="sales-history-list">
+          <p class="empty-cart">No completed sales yet.</p>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

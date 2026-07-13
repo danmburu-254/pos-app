@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  background: #111827;
+  color: white;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: #93c5fd;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+.status-pill {
+  margin: 0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #16a34a;
+  font-weight: 700;
+}
+
+.pos-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  padding: 24px;
+}
+
+.panel {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: start;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+}
+
+.panel-heading p {
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.product-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  background: #f9fafb;
+}
+
+.product-card p {
+  color: #2563eb;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.cart-items {
+  min-height: 160px;
+}
+
+.cart-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.cart-row p {
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.cart-actions button {
+  padding: 6px 9px;
+  font-size: 0.8rem;
+}
+
+.cart-actions button[data-action="remove"] {
+  background: #dc2626;
+}
+
+.cart-actions button[data-action="remove"]:hover {
+  background: #b91c1c;
+}
+
+.empty-cart {
+  color: #9ca3af;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.totals-card {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 16px;
+}
+
+.totals-card div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.discount-button {
+  width: 100%;
+  margin-bottom: 12px;
+  background: #7c3aed;
+}
+
+.discount-button:hover {
+  background: #6d28d9;
+}
+
+.discount-button.active {
+  background: #f97316;
+}
+
+.payment-field {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0;
+  font-weight: 700;
+}
+
+.payment-field input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+}
+
+.grand-total {
+  font-size: 1.25rem;
+}
+
+.checkout-button {
+  width: 100%;
+  margin-top: 12px;
+  background: #16a34a;
+}
+
+.checkout-button:hover {
+  background: #15803d;
+}
+
+.receipt-card {
+  margin-top: 16px;
+  border: 1px dashed #94a3b8;
+  border-radius: 14px;
+  padding: 14px;
+  background: #f8fafc;
+}
+
+.receipt-card ul {
+  padding-left: 20px;
+}
+
+.receipt-warning {
+  margin-bottom: 0;
+  color: #b45309;
+  font-weight: 700;
+}
+
+.sales-history-card {
+  margin-top: 16px;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  padding: 14px;
+  background: #eff6ff;
+}
+
+.history-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid #bfdbfe;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+}
+
+.history-heading h2,
+.history-heading p {
+  margin-bottom: 0;
+}
+
+.history-heading p {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.sales-history-list {
+  display: grid;
+  gap: 10px;
+}
+
+.sale-history-item {
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 10px;
+  background: white;
+}
+
+.sale-history-item p {
+  margin-bottom: 6px;
+}
+
+.sale-history-item ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
